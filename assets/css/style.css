@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
 body {
     margin-top: 20px;
 }
@@ -8,16 +13,13 @@ body {
 .single-timeline-area {
     position: relative;
     z-index: 1;
-    padding-left: 180px;
+    padding-left: 70px;
 }
-@media only screen and (max-width: 575px) {
-    .single-timeline-area {
-        padding-left: 100px;
-    }
-}
+
+
 .single-timeline-area .timeline-date {
     position: absolute;
-    width: 180px;
+    width: 90px;
     height: 100%;
     top: 0;
     left: 0;
@@ -32,13 +34,9 @@ body {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding-right: 60px;
+    padding-right: 50px;
 }
-@media only screen and (max-width: 575px) {
-    .single-timeline-area .timeline-date {
-        width: 100px;
-    }
-}
+
 .single-timeline-area .timeline-date::after {
     position: absolute;
     width: 3px;
@@ -71,7 +69,7 @@ body {
 .single-timeline-area .single-timeline-content {
     position: relative;
     z-index: 1;
-    padding: 30px 30px 25px;
+    padding: 10px 10px 10px;
     border-radius: 6px;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -80,11 +78,7 @@ body {
     box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
     border: 1px solid #ebebeb;
 }
-@media only screen and (max-width: 575px) {
-    .single-timeline-area .single-timeline-content {
-        padding: 20px;
-    }
-}
+
 .single-timeline-area .single-timeline-content .timeline-icon {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
@@ -111,12 +105,36 @@ body {
     margin-bottom: 0;
 }
 
-#vip, #sec, #otros{
-    display: flex;
-    flex-direction: row;
-}
-
 .span{
     display: flex;
-    flex-direction: row;
 }
+
+p{
+    font-size: 10px !important;
+    align-items: center;
+    }
+
+.uno-uno{
+    padding:10 !important;
+    width: 30%;
+    height: 90px;
+    align-items: center;
+}
+
+h6{
+    font-size: 12px;
+}
+
+.seccion{
+    height: 100px;
+    min-width: 200px ;
+    width: 100%;
+
+}
+
+#vip, #sec, #otros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow:1 ;
+}
+

@@ -38,9 +38,9 @@ function mostrarCarta(e) {
     const howMany = tarjeta.children.length;
     if (howMany < 5) {
     
-
+// debugger
       let cardUno = `
-        <div class=" uno single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+        <div class=" col-12 col-sm-4 uno-uno single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
           <div class="timeline-icon" style="background-color: rgb${category==="vip"? "(190, 13, 13)":category==="sec"? "(48, 185, 48)":"(0, 255, 255)"};"></div>
           <div class="timeline-text">
             <h6>${personajes[inicios[category] + howMany].nombre}</h6>
@@ -48,6 +48,7 @@ function mostrarCarta(e) {
           </div>
         </div>
       `;
+      // debugger
       tarjeta.innerHTML += cardUno;
   }
  }
